@@ -1,2 +1,5 @@
 # xelatex-gost-bac-docker-image
-Репозиторий содержит сборку образа Docker для использования в  рамках другого репозитория
+
+![Publish Docker](https://github.com/KernelA/xelatex-gost-bac-docker-image/workflows/Publish%20Docker/badge.svg?branch=master)
+
+Репозиторий содержит Dockerfile и настроенный GitHub Action для автоматической сборки образа Docker. Образ используется в [рамках другого репозитория](https://github.com/KernelA/xelatex-gost-bac)
