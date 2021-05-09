@@ -31,6 +31,6 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: kernela/texlive-gost-bac:latest
+        tags: ${{ secrets.DOCKERHUB_USER }}/texlive-gost-bac:latest
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
