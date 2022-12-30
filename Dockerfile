@@ -5,6 +5,7 @@ FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked apt update && \
+    echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections && \
     apt install -y --no-install-recommends wget ttf-mscorefonts-installer perl 
 
 WORKDIR /tmp
